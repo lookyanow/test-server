@@ -10,7 +10,7 @@ cp main /tmp/'''
     }
     stage('Build docker image') {
       steps {
-        sh 'docker build -t testserver:${BUILD_NUMBER} . '
+        sh 'sudo docker build -t testserver:${BUILD_NUMBER} . '
       }
     }
   }
