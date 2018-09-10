@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Build App') {
       steps {
-        sh 'go build main.go'
+        sh '''go build main.go
+
+cp main /home/ivanlook/'''
       }
     }
   }
