@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''go build main.go
 
-cp main /home/ivanlook/'''
+cp main /tmp/'''
       }
     }
   }
