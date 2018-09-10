@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build App') {
       steps {
-        sh './make.sh'
+        sh 'go build main.go'
       }
     }
   }
