@@ -7,7 +7,7 @@ func main(){
 	http.HandleFunc("/", someFunc)
 	http.HandleFunc("/hello", hello)
 	http.HandleFunc("/test", test)
-	http.ListenAndServe(":8888", nil)
+	http.ListenAndServe(":80", nil)
 }
 
 func someFunc(w http.ResponseWriter, req *http.Request){
