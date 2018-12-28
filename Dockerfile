@@ -1,6 +1,6 @@
 FROM alpine
 
-ADD test-server /usr/bin/server
+ADD main /usr/bin/server
 
 EXPOSE 80/tcp
 
